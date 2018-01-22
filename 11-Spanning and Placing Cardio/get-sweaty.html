@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/style.css">
-  <title>Placing Grid Items!</title>
+  <title>Spanning & Placing Cardio!</title>
 </head>
 
 <body>
@@ -47,22 +47,17 @@
     .container {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: repeat(5, 1fr);
+      /* Make the grid 10 columns wide, every other taking up twice the free space */
+      /* Make the grid have 10 explicit rows, 50px high each */
     }
-    .poop{
-        background: #BADA55;
-        /* We can do this for defining column*/
-        grid-column-start: 1;
-        grid-column-end: -4;
-        /* For Row -1 is only working with explicit grid not with implicit grid*/
-        grid-row: 3 / span 3;
-        /* OR
-        grid-column: 1 / span 2;
-        OR
-        grid-column: 2 / 5; 
-        OR If you want to make your grid column to end
-        grid-column: 1 / -1;
-        */
-    }
+    /* With Item 1, start at col 3 and go until 5 */
+    /* With Item 2, start at col 5 and go until the end */
+    /* Make Item 5 double span 2 cols and rows */
+    /* Make Item 8 two rows high */
+    /* Make Item 15 span the entire grid width */
+    /* Make item 18 span 4 widths, but end 9 */
+    /* Make item 20 start at row 4 and go for 3 */
   </style>
 </body>
+
+</html>
